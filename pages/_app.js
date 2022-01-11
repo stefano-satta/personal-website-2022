@@ -1,4 +1,4 @@
-import RouterLayout from '../components/RouterLayout'
+import RouterLayout from '../components/common/RouterLayout'
 import '../styles/global.css'
 
 
