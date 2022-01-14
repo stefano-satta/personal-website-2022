@@ -18,10 +18,10 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-white custom-toggler"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto">
-                        <Nav.Link href="#home" className="text-white">Home</Nav.Link>
-                        <Nav.Link href="#link" className="text-white">About</Nav.Link>
-                        <Nav.Link href="#home" className="text-white">Projects</Nav.Link>
-                        <Nav.Link href="#link" className="text-white">Contact</Nav.Link>
+                        <Link href={'/'} passHref><Nav.Link className="text-white link me-4">Home</Nav.Link></Link>
+                        <Link href={'#about'} passHref><Nav.Link href="#about" className="text-white link me-4">About</Nav.Link></Link>
+                        <Nav.Link href="/" className="text-white link me-4">Projects</Nav.Link>
+                        <Nav.Link href="/" className="text-white link me-4">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 <div className="d-none d-lg-block">

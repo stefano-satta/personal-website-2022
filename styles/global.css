@@ -12,6 +12,11 @@
     --color-react: #61dafb;
     --color-javascript: #f7df1f;
     --color-angular: #dd0b31;
+    --color-sass: #bf4080;
+    --color-html: #e54c21;
+    --color-css: #2965f1;
+    --color-node: #549d43;
+    --color-git: #f44d28;
 }
 
 * { box-sizing: border-box}
@@ -28,7 +33,11 @@ html, body {
 .bg-icon-angular { color: var(--color-angular) !important; }
 .bg-icon-react { color: var(--color-react) !important; }
 .bg-icon-javascript { color: var(--color-javascript) !important; }
-
+.bg-icon-sass { color: var(--color-sass) !important; }
+.bg-icon-html { color: var(--color-html) !important; }
+.bg-icon-css { color: var(--color-css) !important; }
+.bg-icon-node { color: var(--color-node) !important; }
+.bg-icon-git { color: var(--color-git) !important; }
 
 .text-primary { color: var(--color-primary) !important; }
 .text-white { color: var(--color-white); }
@@ -41,6 +50,27 @@ html, body {
 .btn-outline-primary:hover { background-color: var(--color-primary) !important; color: var(--color-dark); }
 
 .cursor-pointer { cursor: pointer; }
+
+.link {
+    display: inline-block;
+    position: relative;
+    color: var(--color-primary);
+}
+.link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease 0s, right 0.3s ease 0s;
+}
+.link:hover::after {
+    width: 100%; 
+    left: 0; 
+}
 
 .bubble {
     width: 100px;
@@ -91,3 +121,4 @@ html, body {
 }
 
 #tech-stack-icons .list-group-item { background: transparent !important; border: unset;}
+#about { padding: 200px 0;}
