@@ -26,16 +26,18 @@ const NavBar = () => {
                 </Navbar.Collapse>
                 <div className="d-none d-lg-block">
                     <Link href={'mailto:stefanosatta@outlook.com'} passHref>
-                        <FontAwesomeIcon icon={['fas', 'envelope']} size={'2x'} className="me-3 cursor-pointer" />
-                    </Link>
-                    <Link href={'https://www.linkedin.com/in/stefano-satta'} passHref>
-                        <a target="_blank">
-                            <FontAwesomeIcon icon={['fab', 'linkedin']} size={'2x'} className="me-3 text-white" />
+                        <a href="" className="link-icon me-3 cursor-pointer">
+                            <FontAwesomeIcon icon={['fas', 'envelope']} size={'2x'} className="" />
                         </a>
                     </Link>
                     <Link href={'https://www.linkedin.com/in/stefano-satta'} passHref>
-                        <a target="_blank">
-                        <FontAwesomeIcon icon={['fab', 'github']} size={'2x'} className="text-white" />
+                        <a target="_blank" className="link-icon me-3">
+                            <FontAwesomeIcon icon={['fab', 'linkedin']} size={'2x'} />
+                        </a>
+                    </Link>
+                    <Link href={'https://www.linkedin.com/in/stefano-satta'} passHref>
+                        <a target="_blank" className="link-icon">
+                            <FontAwesomeIcon icon={['fab', 'github']} size={'2x'} className="" />
                         </a>
                     </Link>
                 </div>

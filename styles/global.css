@@ -7,10 +7,11 @@
     --color-dark: #1a202c;
     --color-less-dark: #2d3748;   /* 343645 */
     --color-primary: #64f4ab;    /* 4fd1c5 */  
-    --color-white: #ededee;
+    --color-white: #fff;     /* ededee */
     --color-light-grey: #ffffffa3;
     --color-react: #61dafb;
     --color-javascript: #f7df1f;
+    --color-typescript: #2f74c0;
     --color-angular: #dd0b31;
     --color-sass: #bf4080;
     --color-html: #e54c21;
@@ -33,6 +34,7 @@ html, body {
 .bg-icon-angular { color: var(--color-angular) !important; }
 .bg-icon-react { color: var(--color-react) !important; }
 .bg-icon-javascript { color: var(--color-javascript) !important; }
+.bg-icon-typescript { color: var(--color-typescript) !important; }
 .bg-icon-sass { color: var(--color-sass) !important; }
 .bg-icon-html { color: var(--color-html) !important; }
 .bg-icon-css { color: var(--color-css) !important; }
@@ -50,6 +52,9 @@ html, body {
 .btn-outline-primary:hover { background-color: var(--color-primary) !important; color: var(--color-dark); }
 
 .cursor-pointer { cursor: pointer; }
+
+.link-icon { color: var(--color-white)}
+.link-icon:hover { color: var(--color-primary);}
 
 .link {
     display: inline-block;
@@ -122,3 +127,14 @@ html, body {
 
 #tech-stack-icons .list-group-item { background: transparent !important; border: unset;}
 #about { padding: 200px 0;}
+#project { padding-bottom: 200px;}
+.project-card { width: 32%; }
+
+
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 767px) {
+  .project-card { width: 100%; margin-bottom: 2rem;}
+}

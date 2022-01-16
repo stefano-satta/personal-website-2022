@@ -11,6 +11,8 @@ import webpackLogo from '../public/webpack-logo.png'
 import nextjsLogo from '../public/nextjs-logo.png'
 import Image from "next/image";
 import Link from 'next/link';
+import { PROJECTS } from "../utility/project-list";
+import ProjectCard from "../components/common/project-card/ProjectCard";
 
 
 const Home = () => {
@@ -33,9 +35,9 @@ const Home = () => {
           <Bubble style={{bottom: '8%', left: '40%'}}>
             <FontAwesomeIcon icon={['fab', 'js']} size={'3x'} className="bg-icon-javascript"/>
           </Bubble>
-          <div className="position-absolute" style={{bottom: '2%', right: '10%'}}>
+          {/* <div className="position-absolute" style={{bottom: '2%', right: '10%'}}>
             <FontAwesomeIcon icon={['fas', 'chevron-down']} size={'2x'} className="text-grey"/>
-          </div>
+          </div> */}
           
         </Col>
         <Col xs={12} md={5} className="d-flex align-items-center position-relative">
@@ -52,7 +54,7 @@ const Home = () => {
 
 
       <Row className="mt-5" id="about">
-        <h2 className="fs-1 text-primary mb-4 fw-bold">What I <span className="text-primary">Do</span></h2>
+        <h2 className="fs-1 text-primary mb-4 fw-bold">What I Do</h2>
         <Col xs={12} md={6} className="d-flex align-items-center position-relative">
           <div>
             <p>For over eight years I had many opportunities to work in different projects, private and public administration. Having an experience of developing web applications and websites in different web technologies. <br /> My first passion is the frontend side but i have developed also in Nodejs/Express and MongoDB.</p>
@@ -63,8 +65,8 @@ const Home = () => {
                 <a target="_blank" className="ms-2 text-primary text-decoration-none link">
                   Linkedin Profile
                 </a>
-              </Link></p>
-            
+              </Link>
+            </p>
           </div>
         </Col>
         <Col xs={12} md={6} className="d-flex align-items-center justify-content-lg-end position-relative">
@@ -86,6 +88,18 @@ const Home = () => {
             </div>
           </div>
         </Col>
+      </Row>
+
+      <Row className="mt-5" id="project">
+        <h2 className="fs-1 text-primary mb-4 fw-bold">Project</h2>
+        <p>A small list of projects chosen by me.</p>
+        <div className="mt-3 d-flex flex-wrap justify-content-between">
+          {
+            PROJECTS.map( (project, index) => (
+              <ProjectCard project={project} key={`${project.name}-${index}`}/>
+            ))
+          }
+        </div>
       </Row>
     </Container>
   )
