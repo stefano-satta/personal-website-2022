@@ -20,8 +20,8 @@ const NavBar = () => {
                     <Nav className="mx-auto">
                         <Link href={'/'} passHref><Nav.Link className="text-white link me-4">Home</Nav.Link></Link>
                         <Link href={'#about'} passHref><Nav.Link href="#about" className="text-white link me-4">About</Nav.Link></Link>
-                        <Nav.Link href="/" className="text-white link me-4">Projects</Nav.Link>
-                        <Nav.Link href="/" className="text-white link me-4">Contact</Nav.Link>
+                        <Link href={'#project'}><Nav.Link href="#project" className="text-white link me-4">Project</Nav.Link></Link>
+                        <Link href={'#contact'}><Nav.Link href="#contact" className="text-white link me-4">Contact</Nav.Link></Link>
                     </Nav>
                 </Navbar.Collapse>
                 <div className="d-none d-lg-block">

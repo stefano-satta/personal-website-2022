@@ -44,7 +44,9 @@ const Home = () => {
           <div>
             <h2 className="fs-1">Full Stack<br/><span className="text-primary">Javascript</span> Developer</h2>
             <p className="text-light-grey">Experience in developing, testing and debugging web applications and websites</p>
-            <a className="btn btn-outline-primary mt-3 px-3 py-2 text-uppercase" href="mailto:stefanosatta@outlook.com">Contact Me</a>
+            <Link href="mailto:stefanosatta@outlook.com">
+              <a className="btn btn-outline-primary mt-3 px-3 py-2 text-uppercase" >Contact Me</a>
+            </Link>
           </div>
           <Bubble style={{bottom: '20%', right: '25%'}}>
             <FontAwesomeIcon icon={['fab', 'angular']} size={'3x'} className="bg-icon-angular"/>
@@ -55,10 +57,10 @@ const Home = () => {
 
       <Row className="mt-5" id="about">
         <h2 className="fs-1 text-primary mb-4 fw-bold">What I Do</h2>
-        <Col xs={12} md={6} className="d-flex align-items-center position-relative">
+        <Col xs={12} md={6} className="d-flex align-items-center position-relative mb-4">
           <div>
-            <p>For over eight years I had many opportunities to work in different projects, private and public administration. Having an experience of developing web applications and websites in different web technologies. <br /> My first passion is the frontend side but i have developed also in Nodejs/Express and MongoDB.</p>
-            <p>I currently work at Accenture, Cagliari, IT.</p>
+            <p>For over eight years I had many opportunities to work in different projects, private and public administration. Having an experience of developing web applications and websites in different web technologies. <br /> My first passion is the frontend side but I have developed also in Nodejs/Express and MongoDB.</p>
+  
             <p>
               For more details, see my  
               <Link href={'https://www.linkedin.com/in/stefano-satta'} passHref>
@@ -100,6 +102,40 @@ const Home = () => {
             ))
           }
         </div>
+      </Row>
+
+      <Row className="mt-5" id="contact">
+        <h2 className="fs-1 text-primary mb-4 fw-bold">Contact</h2>
+        <Col xs={12} md={6} className="mb-4">
+          <p>Open to new freelance projects. <br/> If you have any question, feel free to contact me.</p>
+          <ul className="mt-4">
+            <li className="list-unstyled mb-2">
+              <FontAwesomeIcon icon={['fas', 'envelope']} className="me-3" />
+              <Link href={'mailto:stefanosatta@outlook.com'} passHref>
+                <a className="text-decoration-none cursor-pointer text-white link">
+                  stefanosatta@outlook.com
+                </a>
+              </Link>
+              {/* <FontAwesomeIcon icon={['fas', 'envelope']} className="me-3"/>
+              <span>stefanosatta@outlook.com</span> */}
+            </li>
+            <li className="list-unstyled mb-2">
+              <FontAwesomeIcon icon={['fab', 'github']} className="me-3"/>
+              <Link href="https://github.com/stefano-satta" passHref>
+                <a target={'_blank'} className="text-white text-decoration-none link">
+                  https://github.com/stefano-satta
+                </a>
+              </Link>
+            </li>
+            <li className="list-unstyled mb-2">
+              <FontAwesomeIcon icon={['fas', 'map-marker-alt']} className="me-3"/>
+              Sardinia, IT
+            </li>
+          </ul>
+        </Col>
+        <Col xs={12} md={6}>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1563576.4709085438!2d7.85770470617479!3d40.05621854191627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ddc48d448d3591%3A0x339674b6e4ab6631!2sSardegna!5e0!3m2!1sit!2sit!4v1642447606843!5m2!1sit!2sit" width="100%" height="450" style={{border: 0}} allowFullScreen="" loading="lazy"></iframe>
+        </Col>
       </Row>
     </Container>
   )
