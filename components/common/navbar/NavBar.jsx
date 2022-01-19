@@ -12,7 +12,7 @@ const NavBar = () => {
     return (
         <Navbar bg="dark" expand="lg">
             <Container>
-                <Navbar.Brand href="#home" className="text-primary fs-1">S
+                <Navbar.Brand href="/" className="text-primary fs-1">S
                     {/* <span className="fw-bold">Stefano</span><span>Satta</span> */}
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-white custom-toggler"/>

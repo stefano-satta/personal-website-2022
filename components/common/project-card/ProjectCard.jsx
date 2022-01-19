@@ -9,7 +9,7 @@ library.add(fas, fab)
 const ProjectCard = ({project}) => {
 
     return (
-        <Card className="bg-less-dark project-card">
+        <Card className="bg-less-dark project-card rounded-3">
             <Card.Body className="d-flex flex-column">
                 <Card.Title as={'h4'}>
                     <FontAwesomeIcon icon={['fas', 'folder']}  className="me-3"/>

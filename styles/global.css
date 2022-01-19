@@ -1,8 +1,8 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
-@import 'animate.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 :root {
     --color-dark: #1a202c;
@@ -25,7 +25,9 @@
 html, body { 
     margin: 0; 
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'DM Sans', sans-serif;
+    /* font-size: 1.125rem; */
     color: var(--color-white);
 }
 
@@ -46,6 +48,7 @@ html, body {
 .text-white { color: var(--color-white); }
 .text-light-grey { color: var(--color-light-grey); }
 .text-family-montserrat { font-family: 'Montserrat', sans-serif !important;}
+.fs-name { font-size: 5.375rem; }
 
 .btn, .btn:hover { outline: 0 !important; border-color: unset; }
 .btn-primary { background-color: var(--color-primary) !important; color: var(--color-dark); }
@@ -131,14 +134,31 @@ html, body {
 #project, #contact { padding-bottom: 200px;}
 .project-card { width: 32%; }
 
-.pulse-infinite {
-  
-    animation: 3s linear 1s infinite bounce; /* referring directly to the animation's @keyframe declaration */
-     /* don't forget to set a duration! */
-  }
+#contact-mail {
+    content: "";
+    position: absolute;
+    background-image: url('../public/mail-circle.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.comics:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: var(--color-less-dark) transparent;
+    display: block;
+    width: 0;
+}
+
+
 
 
 /* MEDIA QUERY */
 @media screen and (max-width: 767px) {
   .project-card { width: 100%; margin-bottom: 2rem;}
+  .fs-name { font-size: 4.375rem; }
 }

@@ -1,4 +1,4 @@
-import { Col, Container, ListGroup, ListGroupItem, Row } from "react-bootstrap";
+import { Col, Container, Row, Button, Overlay, Tooltip} from "react-bootstrap";
 import Bubble from "../components/common/bubble/Bubble";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -13,9 +13,17 @@ import Image from "next/image";
 import Link from 'next/link';
 import { PROJECTS } from "../utility/project-list";
 import ProjectCard from "../components/common/project-card/ProjectCard";
+import React, {useState, useRef, useEffect} from 'react';
 
 
 const Home = () => {
+  const [showClipboard, setClipboard] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setClipboard(false)
+    }, 3000);
+  }, [showClipboard])
 
   return (
     <Container className="bg-dark">
@@ -29,7 +37,7 @@ const Home = () => {
               <span className="pe-3">Hi, there!</span> 
               <Image src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width={40} height={40} id="hand-greeting"/> 
             </p>
-            <h1 className="text-uppercase text-family-montserrat" style={{fontSize: '5.375rem',}}>Stefano<br/> Satta</h1>
+            <h1 className="text-uppercase text-family-montserrat fs-name" >Stefano<br/> Satta</h1>
             <div className="bg-primary w-50 p-1"></div>
           </div>
           <Bubble style={{bottom: '8%', left: '40%'}}>
@@ -105,19 +113,18 @@ const Home = () => {
       </Row>
 
       <Row className="mt-5" id="contact">
-        <h2 className="fs-1 text-primary mb-4 fw-bold">Contact</h2>
+        <h2 className="text-primary mb-4 fw-bold" style={{fontSize: '4.5rem'}}>Wanna be <br />starting something
+            <br /> together ?</h2>
         <Col xs={12} md={6} className="mb-4">
-          <p>Open to new freelance projects. <br/> If you have any question, feel free to contact me.</p>
+          <p className="mt-4">Open to new freelance projects. <br/> If you have any question, feel free to contact me.</p>
           <ul className="mt-4">
             <li className="list-unstyled mb-2">
-              <FontAwesomeIcon icon={['fas', 'envelope']} className="me-3" />
-              <Link href={'mailto:stefanosatta@outlook.com'} passHref>
-                <a className="text-decoration-none cursor-pointer text-white link">
-                  stefanosatta@outlook.com
+              <FontAwesomeIcon icon={['fab', 'linkedin']} className="me-3" />
+              <Link href={'https://www.linkedin.com/in/stefano-satta'} passHref>
+                <a target="_blank" className="text-white text-decoration-none link">
+                  https://www.linkedin.com/in/stefano-satta
                 </a>
               </Link>
-              {/* <FontAwesomeIcon icon={['fas', 'envelope']} className="me-3"/>
-              <span>stefanosatta@outlook.com</span> */}
             </li>
             <li className="list-unstyled mb-2">
               <FontAwesomeIcon icon={['fab', 'github']} className="me-3"/>
@@ -134,7 +141,20 @@ const Home = () => {
           </ul>
         </Col>
         <Col xs={12} md={6}>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1563576.4709085438!2d7.85770470617479!3d40.05621854191627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ddc48d448d3591%3A0x339674b6e4ab6631!2sSardegna!5e0!3m2!1sit!2sit!4v1642447606843!5m2!1sit!2sit" width="100%" height="450" style={{border: 0}} allowFullScreen="" loading="lazy"></iframe>
+          <div className="position-relative py-5 px-3 mt-0" id="contact-mail">
+            {
+              showClipboard && 
+              <span className="bg-less-dark py-2 px-3 position-absolute rounded-3 comics" 
+                    style={{bottom: '110px', left: '50px'}}>
+                      Mail copied! 📋
+              </span>
+            }
+            <div className="text-decoration-none cursor-pointer text-white link" 
+                style={{fontSize: '2.5rem'}}
+                onClick={() => setClipboard(!showClipboard)}>
+                  stefanosatta@outlook.com
+            </div>
+          </div>
         </Col>
       </Row>
     </Container>
