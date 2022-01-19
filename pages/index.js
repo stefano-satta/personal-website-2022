@@ -1,162 +1,18 @@
-import { Col, Container, Row, Button, Overlay, Tooltip} from "react-bootstrap";
-import Bubble from "../components/common/bubble/Bubble";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
-library.add(fas, fab)
-
-import rxjsLogo from '../public/rxjs-logo.svg'
-import webpackLogo from '../public/webpack-logo.png'
-import nextjsLogo from '../public/nextjs-logo.png'
-import Image from "next/image";
-import Link from 'next/link';
-import { PROJECTS } from "../utility/project-list";
-import ProjectCard from "../components/common/project-card/ProjectCard";
-import React, {useState, useRef, useEffect} from 'react';
+import { Container } from "react-bootstrap";
+import Contact from "../components/feature/section-page/Contact";
+import Project from "../components/feature/section-page/Project";
+import FirstViewport from "../components/feature/section-page/FirstViewport";
+import About from "../components/feature/section-page/About";
 
 
 const Home = () => {
-  const [showClipboard, setClipboard] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setClipboard(false)
-    }, 3000);
-  }, [showClipboard])
 
   return (
     <Container className="bg-dark">
-      <Row className="" style={{height: 'calc(100vh - 86px)'}}>
-        <Col xs={12} md={7} className="d-flex align-items-center position-relative">
-          <Bubble style={{top: '8%', right: '12%'}}>
-            <FontAwesomeIcon icon={['fab', 'react']} size={'3x'} className="bg-icon-react"/>
-          </Bubble>
-          <div>
-            <p className="fs-3 mb-0 text-light-grey">
-              <span className="pe-3">Hi, there!</span> 
-              <Image src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width={40} height={40} id="hand-greeting"/> 
-            </p>
-            <h1 className="text-uppercase text-family-montserrat fs-name" >Stefano<br/> Satta</h1>
-            <div className="bg-primary w-50 p-1"></div>
-          </div>
-          <Bubble style={{bottom: '8%', left: '40%'}}>
-            <FontAwesomeIcon icon={['fab', 'js']} size={'3x'} className="bg-icon-javascript"/>
-          </Bubble>
-          {/* <div className="position-absolute" style={{bottom: '2%', right: '10%'}}>
-            <FontAwesomeIcon icon={['fas', 'chevron-down']} size={'2x'} className="text-grey"/>
-          </div> */}
-          
-        </Col>
-        <Col xs={12} md={5} className="d-flex align-items-center position-relative">
-          <div>
-            <h2 className="fs-1">Full Stack<br/><span className="text-primary">Javascript</span> Developer</h2>
-            <p className="text-light-grey">Experience in developing, testing and debugging web applications and websites</p>
-            <Link href="mailto:stefanosatta@outlook.com">
-              <a className="btn btn-outline-primary mt-3 px-3 py-2 text-uppercase" >Contact Me</a>
-            </Link>
-          </div>
-          <Bubble style={{bottom: '20%', right: '25%'}}>
-            <FontAwesomeIcon icon={['fab', 'angular']} size={'3x'} className="bg-icon-angular"/>
-          </Bubble>
-        </Col>
-      </Row>
-
-
-      <Row className="mt-5" id="about">
-        <h2 className="fs-1 text-primary mb-4 fw-bold">What I Do</h2>
-        <Col xs={12} md={6} className="d-flex align-items-center position-relative mb-4">
-          <div>
-            <p>For over eight years I had many opportunities to work in different projects, private and public administration. Having an experience of developing web applications and websites in different web technologies. <br /> My first passion is the frontend side but I have developed also in Nodejs/Express and MongoDB.</p>
-  
-            <p>
-              For more details, see my  
-              <Link href={'https://www.linkedin.com/in/stefano-satta'} passHref>
-                <a target="_blank" className="ms-2 text-primary text-decoration-none link">
-                  Linkedin Profile
-                </a>
-              </Link>
-            </p>
-          </div>
-        </Col>
-        <Col xs={12} md={6} className="d-flex align-items-center justify-content-lg-end position-relative">
-          <div className="">
-            <div className="mb-3 d-flex">
-              <FontAwesomeIcon icon={['fab', 'html5']} size={'3x'} className="bg-icon-html me-4"/>
-              <FontAwesomeIcon icon={['fab', 'css3-alt']} size={'3x'} className="bg-icon-css me-4"/>
-              <FontAwesomeIcon icon={['fab', 'sass']} size={'3x'} className="bg-icon-sass me-4"/>
-              <FontAwesomeIcon icon={['fab', 'js']} size={'3x'} className="bg-icon-javascript me-4"/>
-              <FontAwesomeIcon icon={['fab', 'angular']} size={'3x'} className="bg-icon-angular me-4"/>
-              <Image src={rxjsLogo} width={50} height={50}/>
-            </div>
-            <div className="d-flex">
-              <FontAwesomeIcon icon={['fab', 'react']} size={'3x'} className="bg-icon-react me-4"/>
-              <Image src={nextjsLogo} width={50} height={50}/>
-              <FontAwesomeIcon icon={['fab', 'node']} size={'3x'} className="bg-icon-node me-4 ms-4"/>
-              <Image src={webpackLogo} width={50} height={50} className="text-less-grey"/>
-              <FontAwesomeIcon icon={['fab', 'git-alt']} size={'3x'} className="ms-4 bg-icon-git"/>
-            </div>
-          </div>
-        </Col>
-      </Row>
-
-      <Row className="mt-5" id="project">
-        <h2 className="fs-1 text-primary mb-4 fw-bold">Project</h2>
-        <p>A small list of projects chosen by me.</p>
-        <div className="mt-3 d-flex flex-wrap justify-content-between">
-          {
-            PROJECTS.map( (project, index) => (
-              <ProjectCard project={project} key={`${project.name}-${index}`}/>
-            ))
-          }
-        </div>
-      </Row>
-
-      <Row className="mt-5" id="contact">
-        <h2 className="text-primary mb-4 fw-bold" style={{fontSize: '4.5rem'}}>Wanna be <br />starting something
-            <br /> together ?</h2>
-        <Col xs={12} md={6} className="mb-4">
-          <p className="mt-4">Open to new freelance projects. <br/> If you have any question, feel free to contact me.</p>
-          <ul className="mt-4">
-            <li className="list-unstyled mb-2">
-              <FontAwesomeIcon icon={['fab', 'linkedin']} className="me-3" />
-              <Link href={'https://www.linkedin.com/in/stefano-satta'} passHref>
-                <a target="_blank" className="text-white text-decoration-none link">
-                  https://www.linkedin.com/in/stefano-satta
-                </a>
-              </Link>
-            </li>
-            <li className="list-unstyled mb-2">
-              <FontAwesomeIcon icon={['fab', 'github']} className="me-3"/>
-              <Link href="https://github.com/stefano-satta" passHref>
-                <a target={'_blank'} className="text-white text-decoration-none link">
-                  https://github.com/stefano-satta
-                </a>
-              </Link>
-            </li>
-            <li className="list-unstyled mb-2">
-              <FontAwesomeIcon icon={['fas', 'map-marker-alt']} className="me-3"/>
-              Sardinia, IT
-            </li>
-          </ul>
-        </Col>
-        <Col xs={12} md={6}>
-          <div className="position-relative py-5 px-3 mt-0" id="contact-mail">
-            {
-              showClipboard && 
-              <span className="bg-less-dark py-2 px-3 position-absolute rounded-3 comics" 
-                    style={{bottom: '110px', left: '50px'}}>
-                      Mail copied! 📋
-              </span>
-            }
-            <div className="text-decoration-none cursor-pointer text-white link" 
-                style={{fontSize: '2.5rem'}}
-                onClick={() => setClipboard(!showClipboard)}>
-                  stefanosatta@outlook.com
-            </div>
-          </div>
-        </Col>
-      </Row>
+      <FirstViewport/>
+      <About/>
+      <Project/>
+      <Contact/>
     </Container>
   )
 }
