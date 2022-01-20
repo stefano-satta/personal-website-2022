@@ -15,9 +15,9 @@ const About = () => {
     
     return (
         <Row className="mt-5" id="about">
-            <h2 className="fs-1 text-primary mb-4 fw-bold">What I Do</h2>
+            <h2 className="text-primary mb-4 fw-bold fs-title-section">What I Do</h2>
             <Col xs={12} md={6} className="d-flex align-items-center position-relative mb-4">
-                <div>
+                <div className="fs-4">
                     <p>For over eight years I had many opportunities to work in different projects, private and public administration. Having an experience of developing web applications and websites in different web technologies. <br /> My first passion is the frontend side but I have developed also in Nodejs/Express and MongoDB.</p>
                     <p>
                     For more details, see my  

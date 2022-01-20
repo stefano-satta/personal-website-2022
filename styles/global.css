@@ -50,6 +50,7 @@ html, body {
 .text-light-grey { color: var(--color-light-grey); }
 .text-family-montserrat { font-family: 'Montserrat', sans-serif !important;}
 .fs-name { font-size: 5.375rem; }
+.fs-title-section { font-size: 4.5rem ;}
 
 .btn, .btn:hover { outline: 0 !important; border-color: unset; }
 .btn-primary { background-color: var(--color-primary) !important; color: var(--color-dark); }

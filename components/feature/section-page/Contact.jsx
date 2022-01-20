@@ -19,11 +19,11 @@ const Contact = () => {
 
     return (
         <Row className="mt-5" id="contact">
-            <h2 className="text-primary mb-4 fw-bold" style={{fontSize: '4.5rem'}}>Wanna be <br />starting something
+            <h2 className="text-primary mb-4 fw-bold fs-title-section">Wanna be <br />starting something
                 <br /> together ?</h2>
             <Col xs={12} md={6} className="mb-4">
-            <p className="mt-4">Open to new freelance projects. <br/> If you have any question, feel free to contact me.</p>
-                <ul className="mt-4">
+                <p className="mt-4 fs-4">Open to new freelance projects. <br/> If you have any question, feel free to contact me.</p>
+                <ul className="mt-4 fs-4 ps-0">
                     <li className="list-unstyled mb-2">
                     <FontAwesomeIcon icon={['fab', 'linkedin']} className="me-3" />
                     <Link href={'https://www.linkedin.com/in/stefano-satta'} passHref>
@@ -47,7 +47,7 @@ const Contact = () => {
                 </ul>
             </Col>
             <Col xs={12} md={6}>
-                <div className="position-relative py-5 px-3 mt-0" id="contact-mail">
+                <div className="position-relative py-5 px-3 mt-5" id="contact-mail">
                     {
                     showClipboard && 
                     <span className="bg-less-dark py-2 px-3 position-absolute rounded-3 comics" 

@@ -27,7 +27,7 @@ const InitialLoader = () => {
     return (<>
         <div className="w-100 vh-100 bg-dark d-flex justify-content-center align-items-center">
             <div className="position-absolute text-center w-100 vh-100 d-flex justify-content-center align-items-center"
-                 style={{zIndex: 1, fontSize: '100vh', opacity: .2}}
+                 style={{zIndex: 1, fontSize: '22.0952380952vw', opacity: .2}}
                  ref={counterText}>
             </div>
             <div className="position-relative" style={{zIndex: 10}}>
