@@ -1,8 +1,5 @@
 import {Row, Col} from 'react-bootstrap'
-import Bubble from '../../common/bubble/Bubble'
-import Image from "next/image";
 import Link from 'next/link';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import React from "react";

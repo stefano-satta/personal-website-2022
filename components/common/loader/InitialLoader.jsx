@@ -5,7 +5,7 @@ const InitialLoader = () => {
     const counterText = useRef();
 
     useEffect(() => {
-        animateValue(counterText.current, 0, 100, 2500)
+        animateValue(counterText.current, 0, 100, 1500)
     }, [])
 
     const animateValue = (element, start, end, duration) => {

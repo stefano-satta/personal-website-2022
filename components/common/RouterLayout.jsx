@@ -13,7 +13,7 @@ const RouterLayout = ({children}) => {
     useEffect(() => {
         setTimeout(() => {
             setLoader(false);
-        }, 2500)
+        }, 1500)
     },[])
 
 
@@ -23,16 +23,14 @@ const RouterLayout = ({children}) => {
             <title>Stefano Satta - JS Dev</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
-        { loader && <InitialLoader/>}
 
+        { loader && <InitialLoader/>}
 
         { !loader && (<>
             <NavBar/>
-            <main>
-                <Container fluid className="p-0 bg-dark">
+                <main className="bg-dark">
                     {children}
-                </Container>
-            </main>
+                </main>
             <Footer/>
         </>)
         }
