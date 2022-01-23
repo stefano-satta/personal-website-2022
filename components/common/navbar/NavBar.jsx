@@ -10,7 +10,7 @@ library.add(fas, fab);
 const NavBar = () => {
 
     return (
-        <Navbar bg="dark" expand="lg">
+        <Navbar bg="dark" expand="lg" fixed={'top'} className="p-0">
             <Container>
                 <Navbar.Brand href="/" className="text-primary fs-1">S
                     {/* <span className="fw-bold">Stefano</span><span>Satta</span> */}
@@ -18,10 +18,20 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-white custom-toggler"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto">
-                        <Link href={'/'} passHref><Nav.Link className="text-white link me-4">Home</Nav.Link></Link>
-                        <Link href={'#about'} passHref><Nav.Link href="#about" className="text-white link me-4">About</Nav.Link></Link>
-                        <Link href={'#project'}><Nav.Link href="#project" className="text-white link me-4">Project</Nav.Link></Link>
-                        <Link href={'#contact'}><Nav.Link href="#contact" className="text-white link me-4">Contact</Nav.Link></Link>
+                        <Nav.Item>
+                            <Link href={'/'} passHref><Nav.Link className="text-white link me-4">Home</Nav.Link></Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Link href={'#about'} passHref><Nav.Link href="#about" className="text-white link me-4">About</Nav.Link></Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Link href={'#project'}><Nav.Link href="#project" className="text-white link me-4">Project</Nav.Link></Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Link href={'#contact'}><Nav.Link href="#contact" className="text-white link me-4">Contact</Nav.Link></Link>
+                        </Nav.Item>
+                        
+                        
                     </Nav>
                 </Navbar.Collapse>
                 <div className="d-none d-lg-block">

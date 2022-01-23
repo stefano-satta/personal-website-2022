@@ -51,6 +51,7 @@ html, body {
 .text-family-montserrat { font-family: 'Montserrat', sans-serif !important;}
 .fs-name { font-size: 5.375rem; }
 .fs-title-section { font-size: 4.5rem ;}
+.fs-contact-mail { font-size: 2.5rem;}
 
 .btn, .btn:hover { outline: 0 !important; border-color: unset; }
 .btn-primary { background-color: var(--color-primary) !important; color: var(--color-dark); }
@@ -163,4 +164,7 @@ html, body {
 @media screen and (max-width: 767px) {
   .project-card { width: 100%; margin-bottom: 2rem;}
   .fs-name { font-size: 4.375rem; }
+  .fs-title-section { font-size: 4rem ;}
+  .fs-contact-mail { font-size: 1.6rem;}
+  .list-unstyled .link { font-size: 1rem;}
 }

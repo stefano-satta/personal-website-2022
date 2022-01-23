@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Container } from "react-bootstrap"
 import Footer from "./footer/Footer";
 import NavBar from "./navbar/NavBar";
 import React, {useEffect, useState} from "react";
@@ -28,7 +27,7 @@ const RouterLayout = ({children}) => {
 
         { !loader && (<>
             <NavBar/>
-                <main className="bg-dark">
+                <main className="bg-dark" style={{marginTop: '50.64px'}}>
                     {children}
                 </main>
             <Footer/>
