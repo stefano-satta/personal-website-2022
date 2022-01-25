@@ -30,8 +30,6 @@ const NavBar = () => {
                         <Nav.Item>
                             <Link href={'#contact'}><Nav.Link href="#contact" className="text-white link me-4">Contact</Nav.Link></Link>
                         </Nav.Item>
-                        
-                        
                     </Nav>
                 </Navbar.Collapse>
                 <div className="d-none d-lg-block">

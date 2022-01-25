@@ -9,7 +9,7 @@ library.add(fab)
 const FirstViewport = () => {
 
     return (
-        <Row style={{height: 'calc(100vh - 86px)'}} className="g-0">
+        <Row style={{height: 'calc(100vh - 86px)'}} className="g-0 overflow-hidden">
 
 
             {/*<Bubble style={{bottom: '20%', right: '25%'}}>
