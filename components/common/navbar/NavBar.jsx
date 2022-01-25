@@ -17,7 +17,7 @@ const NavBar = () => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-white custom-toggler"/>
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mx-auto">
+                    <Nav className="mx-auto text-center">
                         <Nav.Item>
                             <Link href={'/'} passHref><Nav.Link className="text-white link me-4">Home</Nav.Link></Link>
                         </Nav.Item>
