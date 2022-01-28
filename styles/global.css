@@ -52,7 +52,6 @@ html, body {
 .fs-name { font-size: 5.375rem; }
 .fs-title-section { font-size: 4.5rem ;}
 .fs-contact-mail { font-size: 2.5rem;}
-#first-view h1, h2 { font-size: 13.0952380952vw; }
 
 .btn, .btn:hover { outline: 0 !important; border-color: transparent; }
 .btn-primary { background-color: var(--color-primary) !important; color: var(--color-dark); }
@@ -159,6 +158,12 @@ html, body {
 }
 
 
+/* FIRST VIEW PAGE */
+.first__view-head { height: calc(100vh - 86px); position: relative; z-index: 30;}
+.first__view-head  h1, h2 { font-size: 7.0952380952vw; }
+
+
+
 /*  404 PAGE     */
 .moon {
     content: '';
@@ -203,6 +208,27 @@ html, body {
     100% { opacity: 6}
 }
 
+.ufo {
+    width: 70px;
+    height: 70px;
+    background: url('../public/ufo.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 70%;
+    top: 18%;
+    transform: rotate(14deg);
+    margin-top: -55px;
+    margin-right: -55px;
+    animation: ufo 4s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
+    z-index: 30;
+}
+
+@keyframes ufo {
+    0% {right: -10%; top: -10%; margin-top: -55px; margin-right: -55px;}
+    40% {right: 50%;top: 50%;}
+    100% {right: 70%;top: 18%;}
+}
+
 .astronaut{
     width: 80px;
     height: 80px;
@@ -228,16 +254,17 @@ html, body {
     left: 100px;
     top: 400px;
     transform: translateY(-60%);
-    color: var(--color-dark)
+    color: var(--color-dark);
+    z-index: 20;
 }
 
 .sun {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: rgb(255, 200, 0);
+    background: var(--color-javascript);
     background-size: contain;
-    position: fixed;
+    position: absolute;
     top: 30%;
     right: 20%;
     margin: auto;
@@ -253,14 +280,15 @@ html, body {
     box-sizing: border-box;
     position: absolute;
     border-radius: 100%;
-    height: 320px;
-    width: 320px;
+    height: 400px;
+    width: 400px;
     overflow: hidden;
     margin-left: -60px;
     margin-top: -60px;
-    z-index: 2;  
-    top: 50%;
-    left: 20%
+    z-index: 20;  
+    top: 24%;
+    left: 18%;
+    animation: gravity 4s infinite ease-in-out;
 }
 .planet__surface {
     position: absolute;
@@ -301,6 +329,17 @@ html, body {
     left: 40%;
     box-shadow: inset 2px 2px 0 rgba(0,0,0,.2);
 }
+
+@keyframes gravity {
+    0% { transform: translateY(5px); }
+    30% { transform: translateY(8px); }
+    60% { transform: translateY(10px); }
+    60% { transform: translateY(8px); }
+    100% { transform: translateY(5px); }
+}
+
+
+
 
 
 

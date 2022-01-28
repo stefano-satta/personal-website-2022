@@ -36,6 +36,7 @@ const Custom404Page = () => {
             <Star top={'75%'} right={'73%'}/>
             <Sun/>
             <Astronaut/>
+            {/* TODO: add zindex for error message here */}
             <div className="error text-center">
                 <div className="fw-bold" style={{fontSize: '10rem', lineHeight: '9.5rem'}}>404</div>
                 <div className="fw-bold fs-1">NOT FOUND</div>
