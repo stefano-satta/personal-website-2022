@@ -20,7 +20,7 @@ const About = () => {
                 <div className="fs-4">
                     <p>For over five years I had many opportunities to work in different projects, private and public administration. Having an experience of developing web applications and websites in different web technologies. <br /> Although my first passion is the creative side I have developed also in Nodejs/Express and MongoDB.</p>
                     <p>
-                    For more details, see my  
+                    For more details, see my
                     <Link href={'https://www.linkedin.com/in/stefano-satta'} passHref>
                         <a target="_blank" className="ms-2 text-primary text-decoration-none link">
                             Linkedin Profile

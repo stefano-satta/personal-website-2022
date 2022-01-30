@@ -33,7 +33,7 @@ const NavBar = () => {
                 <div className="d-none d-lg-block">
                     <Link href={'mailto:stefanosatta@outlook.com'} passHref>
                         <a href="" className="link-icon me-3 cursor-pointer">
-                            <FontAwesomeIcon icon={['fas', 'envelope']} size={'2x'} className="" />
+                            <FontAwesomeIcon icon={['fas', 'envelope']} size={'2x'} />
                         </a>
                     </Link>
                     <Link href={'https://www.linkedin.com/in/stefano-satta'} passHref>
@@ -41,9 +41,9 @@ const NavBar = () => {
                             <FontAwesomeIcon icon={['fab', 'linkedin']} size={'2x'} />
                         </a>
                     </Link>
-                    <Link href={'https://www.linkedin.com/in/stefano-satta'} passHref>
+                    <Link href={'https://github.com/stefano-satta'} passHref>
                         <a target="_blank" className="link-icon">
-                            <FontAwesomeIcon icon={['fab', 'github']} size={'2x'} className="" />
+                            <FontAwesomeIcon icon={['fab', 'github']} size={'2x'} />
                         </a>
                     </Link>
                 </div>
