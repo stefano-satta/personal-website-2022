@@ -164,7 +164,7 @@ html, body {
 
 
 
-/*  404 PAGE     */
+/*  UNIVERSE COMPONENT     */
 .moon {
     content: '';
     background: linear-gradient(90deg, rgba(255,255,255,1) 48%, rgba(150,150,150,1) 100%);
@@ -337,16 +337,6 @@ html, body {
     60% { transform: translateY(8px); }
     100% { transform: translateY(5px); }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

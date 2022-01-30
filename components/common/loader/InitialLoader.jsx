@@ -33,7 +33,7 @@ const InitialLoader = () => {
             <div className="position-relative" style={{zIndex: 10}}>
                 <p className="mb-0 text-white" style={{fontSize: '13.0952380952vw'}}>
                     <span className="pe-3">Hi, there!</span>
-                    <Image src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width={40} height={40} id="hand-greeting"/>
+                    <Image src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width={40} height={40} id="hand-greeting" alt={'greeting'}/>
                 </p>
             </div>
         </div>

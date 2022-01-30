@@ -18,7 +18,7 @@ const About = () => {
             <h2 className="text-primary mb-4 fw-bold fs-title-section">What I Do</h2>
             <Col xs={12} lg={6} className="d-flex align-items-center position-relative mb-4">
                 <div className="fs-4">
-                    <p>For over eight years I had many opportunities to work in different projects, private and public administration. Having an experience of developing web applications and websites in different web technologies. <br /> Although my first passion is the creative side I have developed also in Nodejs/Express and MongoDB.</p>
+                    <p>For over five years I had many opportunities to work in different projects, private and public administration. Having an experience of developing web applications and websites in different web technologies. <br /> Although my first passion is the creative side I have developed also in Nodejs/Express and MongoDB.</p>
                     <p>
                     For more details, see my  
                     <Link href={'https://www.linkedin.com/in/stefano-satta'} passHref>
@@ -37,13 +37,13 @@ const About = () => {
                         <FontAwesomeIcon icon={['fab', 'sass']} size={'3x'} className="bg-icon-sass me-4"/>
                         <FontAwesomeIcon icon={['fab', 'js']} size={'3x'} className="bg-icon-javascript me-4"/>
                         <FontAwesomeIcon icon={['fab', 'angular']} size={'3x'} className="bg-icon-angular me-4"/>
-                        <Image src={rxjsLogo} width={50} height={50}/>
+                        <Image src={rxjsLogo} width={50} height={50} alt={'RxJS logo'}/>
                     </div>
                     <div className="d-flex">
                         <FontAwesomeIcon icon={['fab', 'react']} size={'3x'} className="bg-icon-react me-4"/>
-                        <Image src={nextjsLogo} width={50} height={50}/>
+                        <Image src={nextjsLogo} width={50} height={50} alt={'NextJS logo'}/>
                         <FontAwesomeIcon icon={['fab', 'node']} size={'3x'} className="bg-icon-node me-4 ms-4"/>
-                        <Image src={webpackLogo} width={50} height={50} className="text-less-grey"/>
+                        <Image src={webpackLogo} width={50} height={50} className="text-less-grey" alt={'Webpack logo'}/>
                         <FontAwesomeIcon icon={['fab', 'git-alt']} size={'3x'} className="ms-4 bg-icon-git"/>
                     </div>
                 </div>

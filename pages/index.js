@@ -7,6 +7,16 @@ import React from "react";
 
 
 const Home = () => {
+  console.log(`
+    ***************************************
+
+    Hey! what r u lookin for? :)
+
+    Let's talk about it together.
+    Contact me at stefanosatta@outlook.com
+
+    ***************************************
+  `)
 
   return (<>
       <FirstViewport/>

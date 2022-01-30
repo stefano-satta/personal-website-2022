@@ -35,20 +35,6 @@ const RouterLayout = ({children}) => {
                     <Footer/>
                 </>)
         }
-
-
-
-        {/* { loader && <InitialLoader/>}
-
-        { !loader && router.pathname !== '/404' ? (<>
-            <NavBar/>
-                <main className="bg-dark" style={{marginTop: '50.64px'}}>
-                    {children}
-                </main>
-            <Footer/>
-        </>) : 
-        } */}
-
     </>)
 }
 

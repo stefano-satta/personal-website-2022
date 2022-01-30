@@ -12,9 +12,7 @@ const NavBar = () => {
     return (
         <Navbar bg="dark" expand="lg" fixed={'top'} className="p-0">
             <Container>
-                <Navbar.Brand href="/" className="text-primary fs-1">S
-                    {/* <span className="fw-bold">Stefano</span><span>Satta</span> */}
-                </Navbar.Brand>
+                <Navbar.Brand href="/" className="text-primary fs-1">S</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-white custom-toggler"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto text-center">
