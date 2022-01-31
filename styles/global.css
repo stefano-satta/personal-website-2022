@@ -61,11 +61,7 @@ html, body {
 .link-icon { color: var(--color-white)}
 .link-icon:hover { color: var(--color-primary);}
 
-.link {
-    display: inline-block;
-    position: relative;
-    color: var(--color-primary);
-}
+.link { display: inline-block;position: relative;color: var(--color-primary); }
 .link::after {
     content: "";
     display: block;
@@ -77,27 +73,15 @@ html, body {
     background-color: var(--color-primary);
     transition: width 0.3s ease 0s, right 0.3s ease 0s;
 }
-.link:hover::after {
-    width: 100%; 
-    left: 0;
-}
+.link:hover::after { width: 100%; left: 0; }
 
-.bubble {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: var(--color-less-dark);
-}
+.bubble { width: 100px; height: 100px; border-radius: 50%; background-color: var(--color-less-dark); }
 
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.custom-toggler.navbar-toggler {
-    border-color: var(--color-white);
-} 
-
+.custom-toggler.navbar-toggler { border-color: var(--color-white); } 
 #hand-greeting { animation: greeting 1.8s infinite; }
-
 
 @keyframes greeting {
     0% {
@@ -160,6 +144,8 @@ html, body {
 .first__view-head { height: calc(100vh - 86px); position: relative; z-index: 30;}
 .first__view-head  h1, h2 { font-size: 7.0952380952vw; }
 
+.not__found__page-head { position: relative; z-index: 30;}
+.not__found__page-head > div:first-child { font-size: 10rem; line-height: 9.5rem; }
 
 
 /*  UNIVERSE COMPONENT     */
@@ -349,6 +335,9 @@ html, body {
     #first-view h1 { font-size: 22vw; }
     #first-view h2 { font-size: 20vw; }
     .nav-link { font-size: calc(1.275rem + .3vw)!important }
+    .sun { right: 10%; }
+    .astronaut { top: 76%; }
+    
 }
 @media screen and (max-width: 767px) {
   .project-card { width: 100%; margin-bottom: 2rem;}
@@ -356,4 +345,8 @@ html, body {
   .fs-title-section { font-size: 4rem ;}
   .fs-contact-mail { font-size: 1.6rem;}
   .list-unstyled .link { font-size: 1rem;}
+  .moon { width: 600px; height: 600px; }
+  .moon__crater { top: 27px; left: 184px; transform: rotate(-20deg); }
+  .not__found__page-head { margin-top: 100px; }
+  .not__found__page-head > div:first-child { font-size: 7rem; }
 }

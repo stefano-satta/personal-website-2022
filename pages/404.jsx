@@ -36,8 +36,8 @@ const Custom404Page = () => {
             <Star top={'75%'} right={'73%'}/>
             <Sun/>
             <Astronaut/>
-            <div className="error text-center">
-                <div className="fw-bold" style={{fontSize: '10rem', lineHeight: '9.5rem'}}>404</div>
+            <div className="d-flex flex-column align-items-start justify-content-start justify-content-md-center px-5 text-center vh-100 w-100 text-dark not__found__page-head">
+                <div className="fw-bold" >404</div>
                 <div className="fw-bold fs-1">NOT FOUND</div>
                 <div>It looks like dev is sleeping</div>
                 <Button variant={'primary'} className="mt-5" onClick={() => router.push('/')}>Go Home</Button>
