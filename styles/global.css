@@ -125,6 +125,7 @@ html, body {
     background-image: url('../public/mail-circle.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position-y: center;
 }
 
 .comics:after {
