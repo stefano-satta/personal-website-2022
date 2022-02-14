@@ -27,7 +27,7 @@ const Contact = () => {
             <h2 className="text-primary mb-4 fw-bold fs-title-section">Wanna be <br />starting something
                 <br /> together ?</h2>
             <Col xs={12} lg={6} className="mb-4">
-                <p className="mt-4 fs-4">Open to new freelance projects. <br/> If you have any question, feel free to contact me.</p>
+                <p className="mt-4 fs-4">Open to new projects. <br/> If you have any question, feel free to contact me.</p>
                 <ul className="mt-4 fs-4 ps-0">
                     <li className="list-unstyled mb-2">
                         <FontAwesomeIcon icon={['fab', 'linkedin']} className="me-3" />
