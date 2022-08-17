@@ -37,12 +37,12 @@ const FirstViewport = () => {
             <Star top={'75%'} right={'73%'}/>
             <Sun/>
             <Ufo/>
-            <div className="d-flex flex-column align-items-end justify-content-end justify-content-md-center px-5 first__view-head text-end">
-                <h1>Stefano Satta</h1>
+            <div className="container d-flex flex-column align-items-end justify-content-end justify-content-md-center px-5 first__view-head text-end">
+                <h1 className="display-1">Stefano Satta</h1>
                 <h2 className="bg-primary fs-1 text-dark px-1 py-2 rounded-3">Frontend developer</h2>
                 <p className="text-light-grey text-end fs-5 mt-5">Experience in developing, testing and <br />  debugging web applications and websites</p>
                 <Link href="mailto:stefanosatta@outlook.com">
-                    <a className="btn btn-outline-primary mt-3 px-3 py-2 text-uppercase" >Contact Me</a>
+                    <a className="btn btn-outline-primary mt-3 px-3 py-2 text-uppercase">Contact Me</a>
                 </Link>
             </div>
             <Planet/>
