@@ -21,23 +21,24 @@ const RouterLayout = ({children}) => {
     },[])
 
 
-    return (<>
-        <Head>
-            <title>Stefano Satta - JS Dev</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        </Head>
-
-        { 
-            router.pathname === '/404' ? <Custom404Page/> :
-                loader ? <InitialLoader/> : (<>
-                    <NavBar/>
-                        <main className="bg-dark" style={{marginTop: '50.64px'}}>
-                            {children}
-                            {isScrollEnd && <ButtonScrollTop/>}
-                        </main>
-                    <Footer/>
-                </>)
-        }
+    return (<> 
+            <Head>
+                <title>Stefano Satta - JS Dev</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            </Head>
+            <body>
+                { 
+                    router.pathname === '/404' ? <Custom404Page/> :
+                        loader ? <InitialLoader/> : (<>
+                            <NavBar/>
+                                <main className="bg-dark" style={{marginTop: '50.64px'}}>
+                                    {children}
+                                    {isScrollEnd && <ButtonScrollTop/>}
+                                </main>
+                            <Footer/>
+                        </>)
+                }
+            </body> 
     </>)
 }
 
