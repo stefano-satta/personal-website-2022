@@ -24,8 +24,7 @@ html, body {
     margin: 0; 
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    /* color: var(--color-white); */
-    color: #fff;
+    color: var(--color-white) !important;
 }
 
 .bg-primary{ background-color: var(--color-primary) !important; }
