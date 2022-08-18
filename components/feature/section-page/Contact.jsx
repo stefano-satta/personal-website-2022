@@ -33,7 +33,7 @@ const Contact = () => {
                         <FontAwesomeIcon icon={['fab', 'linkedin']} className="me-3" />
                         <Link href={'https://www.linkedin.com/in/stefano-satta'} passHref>
                             <a target="_blank" className="text-white text-decoration-none link text-wrap">
-                            https://www.linkedin.com/in/stefano-satta
+                            LinkedIn profile
                             </a>
                         </Link>
                     </li>
@@ -41,7 +41,7 @@ const Contact = () => {
                         <FontAwesomeIcon icon={['fab', 'github']} className="me-3"/>
                         <Link href="https://github.com/stefano-satta" passHref>
                             <a target={'_blank'} className="text-white text-decoration-none link text-wrap">
-                            https://github.com/stefano-satta
+                            GitHub profile
                             </a>
                         </Link>
                     </li>
