@@ -41,7 +41,6 @@ html, body {
 .text-primary { color: var(--color-primary) !important; }
 .text-white { color: var(--color-white); }
 .text-light-grey { color: var(--color-light-grey); }
-.text-family-montserrat { font-family: 'Montserrat', sans-serif !important;}
 .fs-name { font-size: 5.375rem; }
 .fs-title-section { font-size: 4.5rem ;}
 .fs-contact-mail { font-size: 2.5rem;}
@@ -138,7 +137,8 @@ html, body {
 
 /* FIRST VIEW PAGE */
 .first__view-head { height: calc(100vh - 86px); position: relative; z-index: 30;}
-.first__view-head  h1, h2 { font-size: 7vw; }
+.first__view-head  h1 { font-size: 7vw; }
+.first__view-head  h2 { font-size: 4vw; }
 #first-view .btn-primary {
     letter-spacing: 1.2px;
 }
@@ -209,7 +209,7 @@ html, body {
     margin-top: -55px;
     margin-right: -55px;
     animation: ufo 4s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
-    z-index: 30;
+    z-index: 50;
 }
 
 @keyframes ufo {
@@ -254,8 +254,8 @@ html, body {
     background: var(--color-javascript);
     background-size: contain;
     position: absolute;
-    top: 25%;
-    right: 25%;
+    top: 30%;
+    right: 21%;
     margin: auto;
     animation: sunshine 2s infinite alternate cubic-bezier(.1,.71,.26,.99);
 }
@@ -353,6 +353,9 @@ html, body {
 
 
 /* MEDIA QUERY */
+@media screen and (min-width: 1200px) {
+    .sun {top: 30%; right: 25%;}
+}
 @media screen and (max-width: 991px) {
     #first-view h1 { font-size: 22vw !important; }
     #first-view h2 { font-size: 7vw !important; }

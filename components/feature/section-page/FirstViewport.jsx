@@ -6,7 +6,7 @@ import Planet from "../../common/universe/Planet";
 import Star from "../../common/universe/Star";
 import Sun from "../../common/universe/Sun";
 import Ufo from '../../common/universe/Ufo';
-library.add(fab)
+library.add(fab);
 
 
 const FirstViewport = () => {

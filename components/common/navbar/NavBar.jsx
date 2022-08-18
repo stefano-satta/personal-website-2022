@@ -15,7 +15,7 @@ const NavBar = () => {
                 <Navbar.Brand href="/" className="text-primary fs-1">S</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-white custom-toggler"/>
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto text-center">
+                    <Nav className="ms-5 text-center">
                         <Nav.Item>
                             <Link href={'/'} passHref><Nav.Link className="text-white link me-4">Home</Nav.Link></Link>
                         </Nav.Item>
@@ -23,10 +23,10 @@ const NavBar = () => {
                             <Link href={'#about'} passHref><Nav.Link href="#about" className="text-white link me-4">About</Nav.Link></Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Link href={'#project'}><Nav.Link href="#project" className="text-white link me-4">Project</Nav.Link></Link>
+                            <Link href={'#project'} passHref><Nav.Link href="#project" className="text-white link me-4">Project</Nav.Link></Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Link href={'#contact'}><Nav.Link href="#contact" className="text-white link me-4">Contact</Nav.Link></Link>
+                            <Link href={'#contact'} passHref><Nav.Link href="#contact" className="text-white link me-4">Contact</Nav.Link></Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
