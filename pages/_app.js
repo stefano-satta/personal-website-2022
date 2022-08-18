@@ -1,5 +1,5 @@
 import RouterLayout from '../components/common/RouterLayout';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
 import '../styles/global.css';
 
