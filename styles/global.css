@@ -356,8 +356,8 @@ html, body {
 
 /* MEDIA QUERY */
 @media screen and (max-width: 991px) {
-    #first-view h1 { font-size: 22vw; }
-    #first-view h2 { font-size: 7vw; }
+    #first-view h1 { font-size: 22vw !important; }
+    #first-view h2 { font-size: 7vw !important; }
     .nav-link { font-size: calc(1.275rem + .3vw)!important }
     .sun { right: 10%; }
     .astronaut { top: 76%; }
