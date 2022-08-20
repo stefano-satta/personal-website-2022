@@ -356,6 +356,9 @@ html, body {
 @media screen and (min-width: 1200px) {
     .sun {top: 30%; right: 25%;}
 }
+@media screen and (max-width:1024px) and (max-width:1366px) {
+    .fs-contact-mail { font-size: 2rem; }
+}
 @media screen and (max-width: 991px) {
     #first-view h1 { font-size: 22vw !important; }
     #first-view h2 { font-size: 7vw !important; }
@@ -368,7 +371,7 @@ html, body {
   .project-card { width: 100%; margin-bottom: 2rem;}
   .fs-name { font-size: 4.375rem; }
   .fs-title-section { font-size: 4rem ;}
-  .fs-contact-mail { font-size: 1.6rem;}
+  .fs-contact-mail { font-size: 1.5rem;}
   .list-unstyled .link { font-size: 1rem;}
   .moon { width: 600px; height: 600px; }
   .moon__crater { top: 27px; left: 184px; transform: rotate(-20deg); }
