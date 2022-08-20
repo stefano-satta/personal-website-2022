@@ -13,7 +13,9 @@ const NavBar = () => {
         <Navbar bg="dark" expand="lg" fixed={'top'} className="p-0" collapseOnSelect>
             <Container>
                 <Navbar.Brand href="/" className="text-primary fs-1">S</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-white custom-toggler"/>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-white">
+                    <FontAwesomeIcon icon={['fas', 'bars']} className="me-3" />
+                </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-5 text-center">
                         <Nav.Item>
