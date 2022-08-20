@@ -14,7 +14,7 @@ const NavBar = () => {
             <Container>
                 <Navbar.Brand href="/" className="text-primary fs-1">S</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-white">
-                    <FontAwesomeIcon icon={['fas', 'bars']} className="me-3" />
+                    <FontAwesomeIcon icon={['fas', 'bars']} />
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-5 text-center">
