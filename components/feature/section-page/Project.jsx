@@ -13,7 +13,7 @@ const Project = () => {
             {
                 PROJECTS.map( (project, index) => (
                     <ProjectCard project={project} key={`${project.name}-${index}`}/>
-                ))
+                )) 
             }
             </div>
         </Row>

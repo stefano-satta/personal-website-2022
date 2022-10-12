@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap"
+import { Card, Badge } from "react-bootstrap"
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -9,13 +9,21 @@ library.add(fas, fab)
 const ProjectCard = ({project}) => {
 
     return (
-        <Card className="bg-less-dark project-card rounded-3">
+        <Card className="bg-less-dark project-card rounded-3 my-2">
             <Card.Body className="d-flex flex-column">
-                <Card.Title as={'h4'}>
-                    <FontAwesomeIcon icon={['fas', 'folder']}  className="me-3"/>
-                    { project.name } 
-                </Card.Title>
-                <Card.Text className="text-light-grey">{ project.description }</Card.Text>
+                <div className="d-flex justify-content-between align-items-start">
+                    <Card.Title as={'h4'}>
+                        <FontAwesomeIcon icon={['fas', 'folder']}  className="me-3"/>
+                        { project.name } 
+                    </Card.Title>
+                    {
+                        !project.isCompleted &&
+                        <Badge pill bg="transparent" className="badge-outline badge-success">
+                            In Progress
+                        </Badge>
+                    }
+                </div>
+                <Card.Text className="mt-2 text-light-grey">{ project.description }</Card.Text>
                 <div className="mt-3 d-flex justify-content-between mt-auto">
                     <div>
                         <FontAwesomeIcon icon={['fas', 'circle']} 

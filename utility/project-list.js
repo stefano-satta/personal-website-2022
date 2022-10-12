@@ -6,6 +6,7 @@ export const PROJECTS = [
         language: 'Typescript',
         bgIconColor: 'bg-icon-typescript',
         date: '10-14-2021',
+        isCompleted: true,
         github: 'https://github.com/stefano-satta/cryptoboard',
         siteUrl: 'https://cryptosboard.netlify.app/'
     },
@@ -16,6 +17,7 @@ export const PROJECTS = [
         language: 'JavaScript',
         bgIconColor: 'bg-icon-javascript',
         date: '01-10-2022',
+        isCompleted: true,
         github: 'https://github.com/stefano-satta/personal-website',
         siteUrl: ''
     },
@@ -26,7 +28,19 @@ export const PROJECTS = [
         language: 'Typescript',
         bgIconColor: 'bg-icon-typescript',
         date: '01-10-2022',
+        isCompleted: true,
         github: null,
         siteUrl: 'https://www.gorights.it/'
+    },
+    {
+        name: 'iTongue',
+        description: 'A React App that it provides translation and meaning. Tailwind and DaisyUI for UIKit.',
+        framework: 'React',
+        language: 'Typescript',
+        bgIconColor: 'bg-icon-typescript',
+        date: '10-05-2022',
+        isCompleted: false,
+        github: 'https://github.com/stefano-satta/iTongue',
+        siteUrl: 'https://stefano-satta.github.io/iTongue'
     }
 ]
