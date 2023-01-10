@@ -6,13 +6,13 @@ import InitialLoader from "./loader/InitialLoader";
 import { useRouter } from "next/router";
 import Custom404Page from '../../pages/404'
 import ButtonScrollTop from "./button-scroll-top/ButtonScrollTop";
-import useScrollEnd from "../../hooks/useScrollEnd";
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 
 const RouterLayout = ({children}) => {
     const [loader, setLoader] = useState(true);
     const router = useRouter();
-    const {isScrollEnd} = useScrollEnd();
+    const {isScrollToTop} = useScrollToTop();
 
     useEffect(() => {
         setTimeout(() => {
@@ -32,7 +32,7 @@ const RouterLayout = ({children}) => {
                         <NavBar/>
                             <main className="bg-dark" style={{marginTop: '50.64px'}}>
                                 {children}
-                                {isScrollEnd && <ButtonScrollTop/>}
+                                {isScrollToTop && <ButtonScrollTop/>}
                             </main>
                         <Footer/>
                     </>)
